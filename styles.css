@@ -12,7 +12,7 @@
     var(--white) 25%,
     var(--primary-color)
   );
-  --avatar-position: 50% 90%; /* modifiez pour cadrer l'avatar : 'x% y%' */
+  --avatar-position: 50% 90%;
 }
 
 * {
@@ -114,9 +114,8 @@ body {
   display: block;
   margin-inline: auto;
   margin-bottom: 1.5rem;
-  border-radius: 50%; /* rend l'image ronde */
-  object-fit: cover; /* recadre correctement si l'image n'est pas carrée */
-  /* positionne le point focal de l'image: changez la variable --avatar-position si nécessaire */
+  border-radius: 50%;
+  object-fit: cover;
   object-position: var(--avatar-position);
   border: 4px solid rgba(255,255,255,0.06);
   box-shadow: 0 12px 34px rgba(0,0,0,0.5);
@@ -447,7 +446,6 @@ footer {
   }
 }
 
-/* Responsive avatar: réduire sur petits écrans */
 @media (max-width: 640px) {
   .header__container img {
     width: 140px;
